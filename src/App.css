@@ -1,0 +1,80 @@
+/* @import url(); */
+
+body{
+    background: #ffffff;
+    font-size: 1.125rem;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50% );
+    margin: 0 auto;
+    width: 16rem;
+    text-align: center;
+    border: 10px solid  black;
+    background: #101116;
+    border-radius: 5px;
+}
+
+.keypad{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-rows: minmax(60px,auto);
+}
+
+input{
+    height: 4.6875rem;
+    width: 15.625rem;
+    background-color: #10111600;
+    border: 0;
+    color: #ffffff;
+    text-align: right;
+    font-size: 1.5625rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+#clear{
+    color: #262832;
+}
+
+#result{
+    grid-column: 4/5;
+    grid-row: 5 ;
+    color: #262832;
+}
+
+#backspace{
+    grid-column: 1/4;
+    grid-row: 1;
+    color: #262832;
+}
+
+button{
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #262832;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active{
+    outline: none;
+}
+
+.highlight{
+    background: #56cbdb ;
+}
